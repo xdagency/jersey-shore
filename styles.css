@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+body {
+    margin: 0; padding: 0;
+    background: url('images/bg-01.jpg') top left repeat;
+    background-size: 300px;
+    height: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 920px;
+}
+
+.text-box {
+    padding: 32px;
+    background: rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin: 0;
+    padding: 24px 0;
+    font: normal 124px/90% "Dokdo", sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px tomato,
+                 2px 2px 5px black,
+                 -3px -3px 7px navy;
+}
+
+p {
+    color: white;
+    font: normal 32px/144% "Allura", serif;
+    text-decoration: overline;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+nav {
+    text-align: center;
+    padding: 32px 0 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    background: mistyrose;
+    border: 1px solid #ccc;
+    margin: 8px 4px;
+    font: normal 18px/100% "Luckiest Guy", sans-serif;
+    box-shadow: 2px 2px 2px black,
+                -2px -2px 2px white;
+}
+
+header {
+    text-align: center;
+}
+
+.bg-snooki { background-image: url("images/snooki-bg.jpg"); }
+.bg-vinny { background-image: url("images/vinny-bg.jpg"); }
+.bg-jwoww { background-image: url("images/jwow-bg.jpg"); }
+
+.profile-pic {
+    width: 40%;
+    float: right;
+    margin: 0 0 24px 24px;
+    display: block;
+    border: 8px dotted pink;
+    box-shadow: 0px 8px 48px -8px rgba(0,0,0,0.66);
+}
+
+.gif {
+    width: 100%;
+    display: block;
+}
+
+.fun {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+
+.fun a {
+    display: block;
+    background: tomato;
+    width: 100px;
+    height: 75px;
+    border-radius: 50%;
+    padding-top: 25px;
+    font: bold 16px/120% "Press Start 2P", sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: 4px solid black;
+    box-shadow: 0px 0px 20px white;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: blue;
+    z-index: 99;
+    text-align: center;
+    animation: colors 1s 0s infinite;
+}
+
+body.escape .overlay {
+    display: block;
+}
+
+.overlay img {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+h5 {
+    font: normal 24px/100% "Press Start 2P", sans-serif;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 90px;
+    }
+    p {
+        font-size: 24px;
+    }
+}
+
+@keyframes colors {
+    0% { background-color: #5a155a; } 19% { background-color: #5a155a; }
+    20% { background-color: #fecc4b; } 39% { background-color: #fecc4b; }
+    40% { background-color: #eedad3; } 59% { background-color: #eedad3; }
+    60% { background-color: #d57067; } 79% { background-color: #d57067; }
+    80% { background-color: #2b778f; } 99% { background-color: #2b778f; }
+    100% { background-color: #5a155a; }
+}
